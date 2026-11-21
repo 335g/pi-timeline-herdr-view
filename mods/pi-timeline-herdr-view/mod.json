@@ -1,0 +1,5 @@
+{
+  "place": "none",
+  "title": "Timeline",
+  "overlay": { "kind": "window", "key": "timeline", "width": 380, "height": 600 }
+}

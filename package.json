@@ -1,0 +1,21 @@
+{
+  "name": "@335g/pi-timeline-herdr-view",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Herdr mod: pi-timeline's task tree as a Herdr pane, sidebar column or window (reads <cwd>/timeline.json)",
+  "keywords": ["herdr", "herdr-mod", "pi", "pi-timeline", "timeline", "tui"],
+  "author": "Yoshiki Kudo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/335g/pi-extensions.git",
+    "directory": "packages/pi-timeline-herdr-view"
+  },
+  "files": [
+    "mods",
+    "keys.json",
+    "RECIPE.md",
+    "preview.png",
+    "LICENSE"
+  ]
+}

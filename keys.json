@@ -1,0 +1,5 @@
+{
+  "global": {
+    "cmd-alt-t": "mod.open:pi-timeline-herdr-view"
+  }
+}

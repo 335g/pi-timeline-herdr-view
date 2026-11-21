@@ -1,0 +1,4 @@
+# Herdr writes these into a mod folder for editor support.
+mods/*/gpui-kit.d.ts
+mods/*/herdr.d.ts
+mods/*/jsconfig.json
