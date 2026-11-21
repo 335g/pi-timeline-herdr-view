@@ -52,5 +52,5 @@ Add it to the `work-body` row of a cloned layout and bind `layout.toggle:timelin
 
 - `props()` has no folder for a mod pane or an overlay, and `focused()` can point at the mod itself. Resolving from `focused()?.cwd` alone made the mod look for `/timeline.json` at the filesystem root.
 - Mod folders are copied by name. Two mods named `timeline` collide; this one is named after its package for that reason.
-- Herdr reloads every copy on save, but a broken save keeps the previous version running and only reports in `herdr-app status`; always run `herdr-app check` before trusting the screen.
+- Herdr reloads a copy when a file inside its own mod folder changes. A symlinked mod folder runs but never reloads; a layout switch restarts it.
 - `overlay.close` and a layout switch both close the window copy; the pane and column copies are separate and stay.

@@ -24,10 +24,10 @@ cp -r packages/pi-timeline-herdr-view/mods/pi-timeline-herdr-view ~/.config/herd
 herdr-app check ~/.config/herdr-app/mods/pi-timeline-herdr-view
 ```
 
-From a checkout of this repo, a symlink works too and reloads on save:
+Install by copying, not by symlinking: Herdr hot-reloads a mod when a file inside its own folder changes, and a symlink runs but does not reload. After editing a checkout, copy again:
 
 ```sh
-ln -s "$PWD/packages/pi-timeline-herdr-view/mods/pi-timeline-herdr-view" ~/.config/herdr-app/mods/
+cp -r packages/pi-timeline-herdr-view/mods/pi-timeline-herdr-view ~/.config/herdr-app/mods/
 ```
 
 Then show it one of three ways:

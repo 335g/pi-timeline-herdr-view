@@ -15,10 +15,10 @@ cp -r packages/pi-timeline-herdr-view/mods/pi-timeline-herdr-view ~/.config/herd
 herdr-app check ~/.config/herdr-app/mods/pi-timeline-herdr-view
 ```
 
-リポジトリのチェックアウトから使うなら symlink でもよい（保存で即リロードされる）。
+symlink ではなくコピーで入れる。Herdr のホットリロードは mod フォルダ内のファイル変更でしか効かず、symlink だと動くが再読み込みされない。チェックアウトを編集したらコピーし直す。
 
 ```sh
-ln -s "$PWD/packages/pi-timeline-herdr-view/mods/pi-timeline-herdr-view" ~/.config/herdr-app/mods/
+cp -r packages/pi-timeline-herdr-view/mods/pi-timeline-herdr-view ~/.config/herdr-app/mods/
 ```
 
 出し方は3通り。
